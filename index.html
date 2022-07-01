@@ -12,44 +12,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Vicious Cycles is an electric bike shop serving Raleigh, NC. Lose your car and find your freedom with Vicious Cycles."
+      content="Vicious Cycles is an electric bike shop serving Raleigh, NC. Lose the car and find your freedom with Vicious Cycles."
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400;700&family=Rokkitt:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <title>Vicious Cycles</title>
-
-    <style>
-      body {
-        background-color: #E7FBFB;
-      }
-
-      h1 {
-        font-size: 4em;
-        text-align: center;
-        color: #010B5B;
-      }
-
-    </style>
-
   </head>
   <body>
     <!-- header & navigation -->
     <header>
       <a href="index.html">
-        <img src="images/logo.png" alt="Vicious Cycles logo" />
+        <img
+          src="images/vcLogoGreen.png"
+          alt="Vicious Cycles logo"
+          class="header-logo"
+        />
+
+        <img src="images/vcLogoGreen-sm.png" alt="Vicious Cycles mobile logo" class="mobile-logo"/>
       </a>
       <nav>
         <ul>
           <li class="nav-link">
-            <a href="about.html">about</a>
+            <a href="about.html">About</a>
           </li>
           <li class="nav-link">
-            <a href="contact.html">contact</a>
+            <a href="contact.html">Contact</a>
           </li>
           <li class="nav-link">
-            <a href="bikes.html">bikes</a>
+            <a href="products.html">Products</a>
           </li>
           <li class="nav-link">
-            <a href="services.html">services</a>
+            <a href="services.html">Services</a>
           </li>
         </ul>
       </nav>
@@ -57,53 +56,133 @@
     <!-- main content -->
     <main>
       <section class="hero-container">
-        <h1>Lose the car, find your freedom</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et amet, eius
-          dolorem magnam in minima.
-        </p>
-        <a href="bikes.html">Start your journey</a>
         <img
-          src="images/kbo-bike-kXP41LVdcv0-unsplash.jpg"
+          src="images/heroimg.jpg"
           alt="Vicious Cycles electric bicycle"
           width="500px"
+          class="heroimg"
         />
+
+        <div class="herotext">
+          <h1 class="hero-h1">
+            Lose the car, <br />find your
+            <span class="hero-h1-span">freedom</span>
+          </h1>
+          <p class="hero-p">
+            Join the millions of people switching their cars for electric bikes
+            to improve their physical and mental health, skip the traffic, and
+            save on gas*
+          </p>
+          <a href="products.html" class="hero-btn">Start your journey</a>
+        </div>
       </section>
-      <section class="sale-container">
-        <h2>25% off for new customers</h2>
-        <p>Terms and conditions apply*</p>
+      <section class="info-container">
+        <a
+          href="https://www.theguardian.com/money/2017/jul/01/electric-bikes-commute-work-e-bike-budget"
+          target="_blank"
+        >
+          <p>
+            *Click to learn more about the impact switching to an electric bike
+            can have on your life
+          </p>
+        </a>
       </section>
-      <section class="review-container">
-        <img src="images/customer1.jpg" alt="" width="200px" />
-        <p>
-          Vicious Cycles is my go-to bike shop! They truly care about their
-          customers.
-        </p>
-        <img src="images/customer2.jpg" alt="" width="200px" />
-        <p>
-          I had no idea where to begin when looking for a new bike. Vicious
-          Cycles helped me every step of the way!
-        </p>
-        <img src="images/customer3.jpg" alt="" width="200px" />
-        <p>
-          I've had my bike serviced at several shops in the area, but once I
-          tried Vicious Cycles, I knew I was home.
-        </p>
-      </section>
-      <section class="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in
-          ratione tenetur ex praesentium placeat illo, ipsum exercitationem quas
-          libero.
-        </p>
+      <div class="twocol-container">
+        <section class="sale-container">
+          <img src="images/saleimg.jpg" alt="bicycle helmet" class="sale-img" />
+          <h2>25% off <span>helmets</span> for new customers</h2>
+          <a href="products.html">Shop now</a>
+          <p>*Offer valid until 9/31/22, terms and conditions may apply</p>
+        </section>
+        <section class="review-container">
+          <h2 class="review-h2">
+            See what our customers have to say about our service
+          </h2>
+          <div class="cust1-container customer-container">
+            <img
+              src="images/customer1.jpg"
+              alt="man riding a bicycle"
+              width="200px"
+              class="customer-img"
+            />
+            <p class="cust-quote">
+              "Vicious Cycles is my go-to bike shop! They truly care about their
+              customers and the community." <br />
+              <span>- Sean, customer since 2012</span>
+            </p>
+          </div>
+          <div class="cust2-container customer-container">
+            <img
+              src="images/customer2.jpg"
+              alt="man riding a bicycle"
+              width="200px"
+              class="customer-img"
+            />
+            <p class="cust-quote cust-quote-r">
+              "I had no idea where to start when looking for a new bike, but VC
+              helped me through every step!" <br />
+              <span>- David, customer since 2010</span>
+            </p>
+          </div>
+          <div class="cust3-container customer-container">
+            <img
+              src="images/customer3.jpg"
+              alt="woman in a bike helmet"
+              width="200px"
+              class="customer-img"
+            />
+            <p class="cust-quote">
+              "I've had my bike repaired at several shops in the area, but once
+              I tried Vicious Cycles, I knew I was home." <br />
+              <span>- Alison, customer since 2015</span>
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="benefit-container">
+        <div class="col">
+          <ion-icon name="cog-outline" class="benefit-icon"></ion-icon>
+          <h3>Custom Builds</h3>
+          <p>
+            Your bike should be as unique as you, that's why we'll work with you
+            to create a custom bike that perfectly meets your needs! From
+            stylish cycles to trusty monster rides, we've done them all.
+            <a href="contact.html"> Get in touch</a> with a member of our
+            mechanic team to discuss your plan, and we'll see your dream
+            realized.
+          </p>
+        </div>
+        <div class="col">
+          <ion-icon name="build-outline" class="benefit-icon"></ion-icon>
+          <h3>Full-Service Repairs</h3>
+          <p>
+            Our team of passionate mechanics have over 50 combined years of
+            experience repairing bikes. We have a guaranteed 24-hour turnaround
+            for most repairs. If we can't have it done within 24 hours, we'll
+            loan you a bike until yours is repaired. Please
+            <a href="contact.html">contact us</a> to schedule an appointment for
+            repair.
+          </p>
+        </div>
+        <div class="col">
+          <ion-icon name="card-outline" class="benefit-icon"></ion-icon>
+          <h3>Financing Options</h3>
+          <p>
+            We know quality bikes aren't cheap, that's why we have in-house loan
+            options to help finance your purchase. All custom builds require a
+            25% down payment before projects begin, and either payment in full,
+            an approved in-house loan, or a transfer of funds to a third-party
+            vendor before delivery.
+          </p>
+        </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2022 Vicious Cycles</p>
-      <a href="#">
-        <ion-icon name="logo-instagram"></ion-icon>
+      <p>&copy; 2022 Vicious Cycles | Raleigh, NC</p>
+      <a href="https://twitter.com/login/">
+        <ion-icon name="logo-twitter"></ion-icon>
       </a>
-      <a href="#">
+      <a href="https://www.facebook.com/login/">
         <ion-icon name="logo-facebook"></ion-icon>
       </a>
     </footer>
