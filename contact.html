@@ -16,7 +16,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <title>Vicious Cycles</title>
+    <title>Contact | Vicious Cycles</title>
   </head>
   <body>
     <!-- header & navigation -->
@@ -52,15 +52,126 @@
     </header>
     <!-- main content -->
     <main>
+      <div class="contact-container">
+        <section class="address-container">
+          <img
+            src="images/contactimg.jpg"
+            alt="person riding a bicycle in a city"
+          />
+          <div class="address-text">
+            <h2>Visit Us</h2>
+            <p>
+              123 Main Street<br />
+              Raleigh, NC 27000<br />
+              Phone: <a href="tel:+19191234567">(919) 123-4567</a><br />
+              Fax: <a href="#">(919) 123-9875</a>
+            </p>
+            <div class="social-icon">
+              <a href="https://twitter.com/login/">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="https://www.facebook.com/login/">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
 
+        <section class="form-container">
+          <h2>Get in Touch</h2>
+          <p>
+            Fill out the form below and a member of our team will be in touch
+            within 24 hours
+          </p>
+          <form method="POST" action="success.php" >
+            <label for="name" class="no-label">Name</label
+            ><input type="text" name="name" id="name" placeholder="Name" />
+            <label for="email" class="no-label">Email</label
+            ><input type="email" name="email" id="email" placeholder="Email" />
+            <label for="phone" class="no-label">Phone</label
+            ><input type="tel" name="phone" id="phone" placeholder="Phone" />
+            
 
-
-
-
-      
+              
+            <div class="opt-container">
+              <fieldset>
+                <legend>What is your preferred contact method?</legend>
+                <label for="pref-email" class="opt-label"
+                  ><input
+                    type="radio"
+                    name="pref-contact"
+                    id="pref-email"
+                    class="opt-input"
+                  />Email</label
+                >
+                <br />
+                <label for="pref-phone" class="opt-label"
+                  ><input
+                    type="radio"
+                    name="pref-contact"
+                    id="pref-phone"
+                    class="opt-input"
+                  />Phone</label
+                >
+              </fieldset>
+              <fieldset>
+                <legend>What is your message about?</legend>
+                <label for="repair" class="opt-label"
+                  ><input
+                    type="checkbox"
+                    name="service"
+                    id="repair"
+                    class="opt-input"
+                  />Repair</label
+                >
+                <label for="custom" class="opt-label"
+                  ><input
+                    type="checkbox"
+                    name="service"
+                    id="custom"
+                    class="opt-input"
+                  />Custom build</label
+                >
+                <br />
+                <label for="general" class="opt-label"
+                  ><input
+                    type="checkbox"
+                    name="general-inquiry"
+                    id="general"
+                    class="opt-input"
+                  />General inquiry</label
+                >
+              </fieldset>
+            </div>
+            <div class="select-container">
+              <label for="select"
+                >What is your preferred appointment time?</label
+              >
+            
+              <select name="select" id="select">
+                <option value="no-preference">No preference</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </div>
+<label for="message" class="no-label">Message</label
+            ><textarea
+              name="message"
+              id="message"
+              cols="65"
+              rows="10"
+              placeholder="Describe your issue or ask a question..."
+            ></textarea>
+            <br>
+            <button type="submit" value="Submit" class="submit-btn">Send</button>
+          </form>
+        </section>
+      </div>
     </main>
+
     <footer>
-      <p>&copy; 2022 Vicious Cycles</p>
+      <p>&copy; 2022 Vicious Cycles | Raleigh, NC</p>
       <a href="https://twitter.com/login/">
         <ion-icon name="logo-twitter"></ion-icon>
       </a>

@@ -16,7 +16,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <title>Vicious Cycles</title>
+    <title>Message Received | Vicious Cycles</title>
   </head>
   <body>
     <!-- header & navigation -->
@@ -50,8 +50,43 @@
         </ul>
       </nav>
     </header>
-    <!-- main content -->
-    <main></main>
+
+    <main>
+      <div class="contact-container">
+        <section class="address-container">
+          <img
+            src="images/contactimg.jpg"
+            alt="person riding a bicycle in a city"
+          />
+          <div class="address-text">
+            <h2>Visit Us</h2>
+            <p>
+              123 Main Street<br />
+              Raleigh, NC 27000<br />
+              Phone: <a href="tel:+19191234567">(919) 123-4567</a><br />
+              Fax: <a href="#">(919) 123-9875</a>
+            </p>
+            <div class="social-icon">
+              <a href="https://twitter.com/login/">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="https://www.facebook.com/login/">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="success-container">
+          <h2>Thank you for your message!</h2>
+          <p>
+            You will receive an email confirmation and a member of our team will
+            be in touch within 24 hours.
+          </p>
+          <a href="index.html">Back home</a>
+        </section>
+      </div>
+    </main>
     <footer>
       <p>&copy; 2022 Vicious Cycles | Raleigh, NC</p>
       <a href="https://twitter.com/login/">
