@@ -138,8 +138,6 @@ nav ul {
 .info-container {
   padding: 1.5%;
   text-align: center;
-  font-weight: 400;
-  font-size: 1.2rem;
   background-color: var(--dark-grey);
   color: var(--light-grey);
   text-decoration: underline;
@@ -147,7 +145,7 @@ nav ul {
 
 .info-container h2 {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .info-container:hover h2 {
@@ -525,7 +523,7 @@ footer a:hover {
 .bio-container h1 {
   font-family: 'Rokkitt', serif;
   color: var(--light-green);
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-align: center;
   text-decoration: underline;
   margin-bottom: 1%;
@@ -647,6 +645,95 @@ footer a:hover {
   width: 90%;
 }
 
+
+/* ----------
+  FINANCING
+----------- */
+
+.fin-container {
+  width: 80%;
+  margin: 3% auto;
+}
+
+.fin-container h1 {
+  font-family: 'Rokkitt', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--light-green);
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+
+.fin-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.fin-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.fin-links a {
+  padding: 2%;
+  margin: 1% auto;
+  background-color: var(--light-green);
+  width: 30%;
+  text-align: center;
+  color: var(--mdark-grey);
+  border-radius: 50vh;
+}
+
+.fin-links a:hover {
+  background-color: var(--dark-green);
+  color: var(--xdark-grey);
+}
+
+.fin-img {
+  width: 100%;
+}
+
+.fin-img-container {
+  z-index: 1;
+  position: relative;
+}
+
+.table-container {
+  z-index: 999;
+  position: absolute;
+  width: 50%;
+  top: 75%;
+  right: 0; 
+  margin-right: 5%;
+}
+
+table, th, td {
+  border: 2px solid var(--dark-grey);
+  border-collapse: collapse;
+  padding: 2%;
+  text-align: center; 
+}
+
+th {
+  font-family: 'Rokkitt', serif;
+  color: var(--light-green);
+  font-size: 1.5rem;
+}
+
+td a {
+  color: var(--light-green);
+}
+
+td a:hover {
+  color: var(--light-grey);
+}
+
+.service {
+  font-weight: 600;
+}
 
 
 
@@ -851,6 +938,18 @@ footer a:hover {
   }
 
   /* index styles */
+  .hero-container {
+    border-bottom: 8px solid var(--mdark-grey);
+  }
+
+  .info-container {
+    display: none;
+  }
+
+  .sale-container h2 {
+    line-height: 1.8rem;
+  }
+
   .sale-container img {
     float: none;
     width: 60%;
@@ -859,7 +958,7 @@ footer a:hover {
   /* about us styles */
 
   .bio-container h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 
   .bio {
