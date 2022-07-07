@@ -719,29 +719,58 @@ footer a:hover {
   line-height: 1.5rem;
 }
 
-.loan-container {
+.left-container {
+  float: left;
   display: flex;
-  width: 60%;
-  margin: 3% auto;
+  flex-direction: column;
+  width: 20%;
+  margin: 5% 0 2% 3%;
+}
+
+.loan-container {
   background-color: var(--mdark-grey);
   border-radius: 20px;
+  text-align: center;
 }
 
 .loan-container img {
-  width: 40%;
+  width: 100%;
   border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.loan-container h3 {
+  margin-top: 7%;
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
 
 .loan-container p {
-  padding: 5%;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  text-align: center;
-  align-self: center;
+  padding: 6%;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
 }
 
+.repair-link-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15% 4%;
+}
 
+.repair-link-container a {
+  padding: 5% 1%;
+  background-color: var(--light-green);
+  color: var(--mdark-grey);
+  font-size: 1.2rem;
+  margin-bottom: 7%;
+  border-radius: 50vh;
+  font-weight: 600;
+}
+
+.repair-link-container a:hover {
+  background-color: var(--dark-green);
+}
 
 
 
