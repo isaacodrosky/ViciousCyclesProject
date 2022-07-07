@@ -328,13 +328,14 @@ footer {
 }
 
 footer p {
+  font-size: 1.2rem;
   margin-right: 8px;
 }
 
 footer a {
   margin-top: 5px;
   padding: 5px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 footer a:hover {
@@ -461,6 +462,7 @@ footer a:hover {
   margin: 2% auto;
   width: 85%;
   background-color: var(--xdark-grey);
+  text-align: left;
 }
 
 .form-container legend {
@@ -532,7 +534,7 @@ footer a:hover {
 .bio {
   font-size: 1.3rem;
   line-height: 1.8rem;
-  text-indent: 30px;
+  text-align: center;
 }
 
 .about-aside {
@@ -646,94 +648,102 @@ footer a:hover {
 }
 
 
-/* ----------
-  FINANCING
------------ */
+/* -------
+  REPAIRS
+-------- */
 
-.fin-container {
-  width: 80%;
-  margin: 3% auto;
+.overview-container {
+  text-align: center;
+  width: 70%;
+  margin: 2% auto;
 }
 
-.fin-container h1 {
+.overview-container h1 {
   font-family: 'Rokkitt', serif;
-  font-size: 2.5rem;
-  text-align: center;
   color: var(--light-green);
+  font-size: 2.5rem;
   text-decoration: underline;
   margin-bottom: 1%;
 }
 
-.fin-container p {
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+.overview-container p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
-.fin-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1%;
+.repairs-container {
+  width: 70%;
+  margin: 3% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.fin-links a {
-  padding: 2%;
-  margin: 1% auto;
-  background-color: var(--light-green);
-  width: 30%;
-  text-align: center;
-  color: var(--mdark-grey);
-  border-radius: 50vh;
+.details-container {
+  padding: 4% 5%;
+  margin: 5%;
+  background-color: var(--xdark-grey);
+  border: 4px solid var(--light-green);
+  border-radius: 15px;
+  box-shadow: -2px 2px 15px rgba(0, 231, 73, 0.6);
 }
 
-.fin-links a:hover {
-  background-color: var(--dark-green);
-  color: var(--xdark-grey);
-}
-
-.fin-img {
-  width: 100%;
-}
-
-.fin-img-container {
-  z-index: 1;
-  position: relative;
-}
-
-.table-container {
-  z-index: 999;
-  position: absolute;
-  width: 50%;
-  top: 75%;
-  right: 0; 
-  margin-right: 5%;
-}
-
-table, th, td {
-  border: 2px solid var(--dark-grey);
-  border-collapse: collapse;
-  padding: 2%;
-  text-align: center; 
-}
-
-th {
-  font-family: 'Rokkitt', serif;
+.details-container .price {
   color: var(--light-green);
-  font-size: 1.5rem;
-}
-
-td a {
-  color: var(--light-green);
-}
-
-td a:hover {
-  color: var(--light-grey);
-}
-
-.service {
+  font-size: 2.5rem;
   font-weight: 600;
+  margin-bottom: 1%;
 }
+
+.details-container h2 {
+  font-size: 2.3rem;
+  margin-bottom: 3%;
+  font-family: 'Rokkitt', serif; 
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.details-container li {
+  list-style: disc;
+}
+
+.details-container .desc {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.details-container ul {
+  margin-top: 2%;
+}
+
+.details-container li {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.loan-container {
+  display: flex;
+  width: 60%;
+  margin: 3% auto;
+  background-color: var(--mdark-grey);
+  border-radius: 20px;
+}
+
+.loan-container img {
+  width: 40%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.loan-container p {
+  padding: 5%;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  text-align: center;
+  align-self: center;
+}
+
+
+
+
 
 
 
@@ -873,6 +883,11 @@ td a:hover {
     width: 30%;
   }
 
+  /* repair styles */
+  .repairs-container {
+    width: 85%;
+  }
+
 }
 
 /* tablets/lg mobile */
@@ -917,6 +932,11 @@ td a:hover {
 
   .emp a {
     display: none;
+  }
+
+  /* repair styles */
+  .repairs-container {
+    grid-template-columns: 1fr;
   }
 }
 
