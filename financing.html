@@ -16,7 +16,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <title>Vicious Cycles</title>
+    <title>Financing | Vicious Cycles</title>
   </head>
   <body>
     <!-- header & navigation -->
@@ -30,7 +30,7 @@
       </a>
       <nav>
         <ul>
-          <li class="nav-link">
+          <li class="nav-link dropdown">
             <a href="about.html">About</a>
           </li>
           <li class="nav-link">
@@ -39,69 +39,58 @@
           <li class="nav-link">
             <a href="products.html">Products</a>
           </li>
-          <li class="nav-link">
-            <a href="services.html">Services</a>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+              <a href="repairs.html">Repairs</a>
+              <a href="custom.html">Custom Builds</a>
+              <a href="financing.html">Financing</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <!-- main content -->
     <main>
-      <section class="fin-container">
-        <h1>Financing</h1>
-        <p>
-          Vicious Cycle products can be purchased/ordered at our store. Come
-          down today and we'll get started with a purchase of an existing bike
-          with cash, credit, or in&#8209;house loan approval. All custom builds will
-          require a 25% down payment before projects will begin, and either
-          payment in full, or an approved in&#8209;house loan, or a transfer of funds
-          to a third&#8209;party vendor. <br />All purchases on custom cycles are
-          final.
-        </p>
-        <div class="fin-links">
-        <a href="products.html">Start your journey</a>
-        <a href="custom.html">More about custom cycles</a>
-      </div></section>
-      <div class="fin-img-container">
-        <img src="images/financeimg.jpg" alt="bicycle" class="fin-img" />
+      <h1 class="fin-h1">Financing</h1>
+
+      <div class="fin-container">
+        <!-- left side container for bike donations -->
+        <div class="donation-container">
+          <img
+            src="images/commuterimg.jpg"
+            alt="person riding a bicycle in the city"
+          />
+
+          <div class="donation-text">
+            <h2>Needs-Based Bikes</h2>
+            <p>
+              Through our bike donation and trade-in program, we are able to
+              supply a limited number of free or reduced-cost bikes to community
+              members. Please <a href="contact.html">contact us</a> to learn
+              more and determine if you are eligible for this program.
+            </p>
+          </div>
+        </div>
+        <!-- main content of page -->
+        <section class="fin-main-container">
+          <h2>Let's get you on your way</h2>
+          <p>
+            Vicious Cycle products can be purchased/ordered at our store. Come
+            down today and we'll get started with a purchase of an existing bike
+            with cash, credit, or in&#8209;house loan approval. All custom
+            builds will require a 25% down payment before projects will begin,
+            and either payment in full, or an approved in&#8209;house loan, or a
+            transfer of funds to a third&#8209;party vendor.
+            <em><span>All purchases on custom cycles are final.</span></em>
+          </p>
+          <!-- container for CTA links -->
+          <div class="fin-links">
+            <a href="products.html">Start your journey</a>
+            <a href="custom.html">More about custom cycles</a>
+          </div>
+        </section>
       </div>
-      <section class="table-container">
-        <table>
-          <tr>
-            <th>Service</th>
-            <th>Details</th>
-            <th>Price</th>
-          </tr>
-          <tr>
-            <td class="service">Basic Tune&#8209;up</td>
-            <td>Tire fill&#8209;up, chain grease, and brake adjusting</td>
-            <td>$75</td>
-          </tr>
-          <tr>
-            <td class="service">Advanced Tune&#8209;up</td>
-            <td>Basic tune&#8209;up services + full cleaning and check&#8209;up</td>
-            <td>$100</td>
-          </tr>
-          <tr>
-            <td class="service">Minor Repairs</td>
-            <td>Any repairs completed within 24 hours</td>
-            <td><a href="contact.html">Contact for details</a></td>
-          </tr>
-          <tr>
-            <td class="service">Major Repairs</td>
-            <td>Any repairs requiring more than 24 hours to complete</td>
-            <td><a href="contact.html">Contact for details</a></td>
-          </tr>
-          <tr>
-            <td class="service">Custom Build</td>
-            <td>
-              Includes two consultations with our builders, free
-              tune&#8209;ups for a year, and a lifetime warranty
-            </td>
-            <td>Starts at $1000</td>
-          </tr>
-        </table>
-      </section>
     </main>
     <footer>
       <p>&copy; 2022 Vicious Cycles | Raleigh, NC</p>

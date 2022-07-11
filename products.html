@@ -16,7 +16,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <title>Vicious Cycles</title>
+    <title>Products | Vicious Cycles</title>
   </head>
   <body>
     <!-- header & navigation -->
@@ -30,7 +30,7 @@
       </a>
       <nav>
         <ul>
-          <li class="nav-link">
+          <li class="nav-link dropdown">
             <a href="about.html">About</a>
           </li>
           <li class="nav-link">
@@ -39,14 +39,47 @@
           <li class="nav-link">
             <a href="products.html">Products</a>
           </li>
-          <li class="nav-link">
-            <a href="services.html">Services</a>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+              <a href="repairs.html">Repairs</a>
+              <a href="custom.html">Custom Builds</a>
+              <a href="financing.html">Financing</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <!-- main content -->
-    <main></main>
+    <main>
+      <h1 class="prod-h1">Products</h1>
+      <div class="products-container">
+        <section class="prod-card">
+          <img
+            src="images/ebikeimg.jpg"
+            alt="person riding an electric bicycle"
+          />
+          <h2>Electric Bikes</h2>
+          <p>Aside from our <a href="custom.html">custom cycles</a>, we sell pre-made electric bikes from brands like Aventon, KBO, and Cannondale. Come into the shop today to browse our selection. Already have a specific bike in mind? <a href="contact.html">Contact us</a> to check availability, and if we don't have what you need in stock, we will place an order for you!</p>
+        </section>
+        <section class="prod-card">
+          <img
+            src="images/accessoriesimg.jpg"
+            alt="a bicycle with a storage bag"
+          />
+          <h2>Accessories</h2>
+          <p>We've got all the accessories you could need from reputable brands like Specialized, Giant, and Schwinn. From safety items like helmets, reflectors, and bells to storage like bags and racks. If you can't find the specific item you're looking for, we're happy to place an order for delivery or in-store pickup.</p>
+        </section>
+        <section class="prod-card">
+          <img
+            src="images/partsimg.jpg"
+            alt="close-up of bicycle disc brakes"
+          />
+          <h2>Parts</h2>
+          <p>More of a do-it-yourself person? We sell a wide variety of bicycle parts for electric and manual bicycles, so you can replace what you need, whenever you need it, from customizing your cycle to upgrading parts. Our <a href="repairs.html">repair shop</a> is here to help with any questions you have or assistance you may need.</p>
+        </section>
+      </div>
+    </main>
     <footer>
       <p>&copy; 2022 Vicious Cycles | Raleigh, NC</p>
       <a href="https://twitter.com/login/">

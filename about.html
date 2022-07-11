@@ -30,7 +30,7 @@
       </a>
       <nav>
         <ul>
-          <li class="nav-link">
+          <li class="nav-link dropdown">
             <a href="about.html">About</a>
           </li>
           <li class="nav-link">
@@ -39,13 +39,19 @@
           <li class="nav-link">
             <a href="products.html">Products</a>
           </li>
-          <li class="nav-link">
-            <a href="services.html">Services</a>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+              <a href="repairs.html">Repairs</a>
+              <a href="custom.html">Custom Builds</a>
+              <a href="financing.html">Financing</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- container for page header and description -->
       <section class="bio-container">
         <h1>Vicious Cycles</h1>
         <p class="bio">
@@ -56,7 +62,7 @@
           extension of its owner. We believe in the significance of
           individualism and freedom.
         </p>
-        
+        <!-- aside with VC purpose and links -->
         <aside class="about-aside"><p>
           We build custom electric bicycles primarily for commuters, because we know there are no greater freedoms than no traffic jams, no road rage, no searching for parking, and no gas!
         </p>
@@ -66,6 +72,7 @@
         </aside>
       </section>
       <h2 class="employee-h2">Meet the Team</h2>
+      <!-- grid container for employee bios -->
       <section class="employee-container">
         <div class="emp-one emp">
           <img
@@ -107,7 +114,7 @@
           <a href="custom.html">Custom builds</a>
         </div>
       </section>
-
+      <!-- Google Maps container -->
       <div class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66509.2825460067!2d-78.6684326867918!3d35.68376877067754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac8bd3792852a9%3A0x763d8c798479a213!2sWake%20Technical%20Community%20College-%20Southern%20Wake%20Campus!5e0!3m2!1sen!2sus!4v1656958090332!5m2!1sen!2sus"

@@ -36,7 +36,7 @@
       </a>
       <nav>
         <ul>
-          <li class="nav-link">
+          <li class="nav-link dropdown">
             <a href="about.html">About</a>
           </li>
           <li class="nav-link">
@@ -45,21 +45,26 @@
           <li class="nav-link">
             <a href="products.html">Products</a>
           </li>
-          <li class="nav-link">
-            <a href="services.html">Services</a>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+              <a href="repairs.html">Repairs</a>
+              <a href="custom.html">Custom Builds</a>
+              <a href="financing.html">Financing</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <!-- main content -->
     <main>
+      <!-- container for hero img and tagline/CTA -->
       <section class="hero-container">
         <img
           src="images/heroimg.jpg"
           alt="Vicious Cycles electric bicycle"
           class="heroimg"
         />
-
         <div class="herotext">
           <h1 class="hero-h1">
             Lose the car, <br />find your
@@ -68,29 +73,34 @@
           <p class="hero-p">
             Join the millions of people switching their cars for electric bikes
             to improve their physical and mental health, skip the traffic, and
-            save on gas*
+            save on gas
           </p>
-          <a href="products.html" class="hero-btn">Start your journey</a>
+          <a href="products.html" class="hero-btn">
+            Start your journey
+          </a>
         </div>
       </section>
+      <!-- external link to Guardian article -->
       <section class="info-container">
         <a
           href="https://www.theguardian.com/money/2017/jul/01/electric-bikes-commute-work-e-bike-budget"
           target="_blank"
         >
           <h2>
-            *Learn more about the impact switching to an electric bike can have
-            on your life
+            THE GUARDIAN: Power through your work commute on an electric bike
           </h2>
         </a>
       </section>
+      <!-- grid container for sale + reviews -->
       <div class="twocol-container">
+        <!-- container for sale promotion -->
         <section class="sale-container">
           <img src="images/saleimg.jpg" alt="bicycle helmet" class="sale-img" />
           <h2>25% off <span>helmets</span> for new customers</h2>
           <a href="products.html">Shop now</a>
           <p>*Offer valid until 9/31/22, terms and conditions may apply</p>
         </section>
+        <!-- container for customer reviews -->
         <section class="review-container">
           <h2 class="review-h2">
             See what our customers have to say about our service
@@ -133,6 +143,7 @@
           </div>
         </section>
       </div>
+      <!-- grid container for services/benefits of VC -->
       <section class="benefit-container">
         <div class="col">
           <ion-icon name="cog-outline" class="benefit-icon"></ion-icon>

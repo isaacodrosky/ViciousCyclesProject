@@ -31,7 +31,7 @@
       </a>
       <nav>
         <ul>
-          <li class="nav-link">
+          <li class="nav-link dropdown">
             <a href="about.html">About</a>
           </li>
           <li class="nav-link">
@@ -40,15 +40,22 @@
           <li class="nav-link">
             <a href="products.html">Products</a>
           </li>
-          <li class="nav-link">
-            <a href="services.html">Services</a>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+              <a href="repairs.html">Repairs</a>
+              <a href="custom.html">Custom Builds</a>
+              <a href="financing.html">Financing</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
     <!-- main content -->
     <main>
+      <!-- main container for page -->
       <div class="contact-container">
+        <!-- container for address card -->
         <section class="address-container">
           <img
             src="images/contactimg.jpg"
@@ -72,13 +79,14 @@
             </div>
           </div>
         </section>
-
+        <!-- container for form desc + form -->
         <section class="form-container">
           <h2>Get in Touch</h2>
           <p>
             Fill out the form below and a member of our team will be in touch
             within 24 hours
           </p>
+          <!-- begin form -->
           <form method="POST" action="#" >
             <label for="name" class="no-label">Name</label
             ><input type="text" name="name" id="name" placeholder="Name" />
@@ -86,9 +94,7 @@
             ><input type="email" name="email" id="email" placeholder="Email" />
             <label for="phone" class="no-label">Phone</label
             ><input type="tel" name="phone" id="phone" placeholder="Phone" />
-            
-
-              
+            <!-- grid container for form fieldsets -->
             <div class="opt-container">
               <fieldset>
                 <legend>What is your preferred contact method?</legend>
@@ -109,6 +115,15 @@
                     class="opt-input"
                   />Phone</label
                 >
+                <br />
+                <label for="pref-none" class="opt-label"
+                  ><input
+                    type="radio"
+                    name="pref-contact"
+                    id="pref-none"
+                    class="opt-input"
+                  />No preference</label
+                >
               </fieldset>
               <fieldset>
                 <legend>What is your message about?</legend>
@@ -120,6 +135,7 @@
                     class="opt-input"
                   />Repair</label
                 >
+                <br>
                 <label for="custom" class="opt-label"
                   ><input
                     type="checkbox"
@@ -139,6 +155,7 @@
                 >
               </fieldset>
             </div>
+            <!-- container for drop-down selects -->
             <div class="select-container">
               <label for="select"
                 >What is your preferred appointment time?</label
@@ -151,7 +168,7 @@
                 <option value="evening">Evening</option>
               </select>
             </div>
-<label for="message" class="no-label">Message</label
+            <label for="message" class="no-label">Message</label
             ><textarea
               name="message"
               id="message"
@@ -163,6 +180,7 @@
             <button type="submit" value="Submit" class="submit-btn">Send</button>
           </form>
         </section>
+        <!-- end form -->
       </div>
     </main>
 
