@@ -4,7 +4,7 @@
     06/29/2022
 */
 
-/* CUSTOM COLORS */
+/* CUSTOM VARIABLES */
 
 :root {
   --dark-green: #049b14;
@@ -26,7 +26,7 @@
 
 a {
   text-decoration: none;
-  color: var(--light-grey);
+  color: var(--light-green);
 }
 
 li {
@@ -68,7 +68,6 @@ nav ul {
 }
 
 .nav-link {
-  font-family: "Archivo", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   padding: 10px 30px;
@@ -79,11 +78,63 @@ nav ul {
   border-bottom: 2px solid var(--light-green);
 }
 
-.nav-link:hover a {
-  color: #fff;
+.nav-link a {
+  color: var(--light-grey);
 }
 
-/* INDEX STYLES */
+.nav-link:hover a {
+  color: var(--light-green);
+}
+
+/* styling for dropdown menu */
+.dropdown {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 10px 30px;
+  border-bottom: 2px solid #000;
+}
+
+.dropdown > a {
+  color: var(--light-grey);
+}
+
+.dropdown:hover {
+  border-bottom: 2px solid var(--light-green);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  text-align: left;
+  background-color: var(--mdark-grey);
+  padding: 10%;
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: var(--light-grey);
+  font-size: 1.3rem;
+  display: block;
+  margin: 12% 5%;
+}
+
+.dropdown-content a:hover {
+  color: var(--light-green);
+  text-decoration: underline;
+}
+
+/* show dropdown menu when hover on services tab */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* ------
+  INDEX
+------- */
 
 .hero-container {
   position: relative;
@@ -316,7 +367,6 @@ nav ul {
 /* FOOTER STYLES */
 
 footer {
-  background-color: #000;
   width: 80%;
   margin: 0 auto;
   padding: 1%;
@@ -356,7 +406,7 @@ footer a:hover {
   font-size: 2.5rem;
   margin-bottom: 2%;
   color: var(--light-green);
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   text-decoration: underline;
 }
 
@@ -523,7 +573,7 @@ footer a:hover {
 }
 
 .bio-container h1 {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   color: var(--light-green);
   font-size: 2.5rem;
   text-align: center;
@@ -551,7 +601,7 @@ footer a:hover {
   text-align: center;
   background-color: rgba(81, 81, 81, 0.4);
   border-radius: 20px;
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
 }
 
 .about-links {
@@ -580,7 +630,7 @@ footer a:hover {
 
 .employee-h2 {
   text-align: center;
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   color: #fff;
   font-size: 2.5rem;
   text-decoration: underline;
@@ -598,7 +648,7 @@ footer a:hover {
   align-items: center;
   margin: 0 3%;
   padding: 30px 25px;
-  background-image: linear-gradient(#000, var(--xdark-grey) , var(--mdark-grey));
+  background-image: linear-gradient(#000, var(--xdark-grey), var(--mdark-grey));
   justify-content: space-between;
 }
 
@@ -617,7 +667,7 @@ footer a:hover {
 .employee-container h2 {
   margin-top: 5%;
   color: var(--light-green);
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   font-size: 2rem;
 }
 
@@ -639,14 +689,12 @@ footer a:hover {
   border: 2px solid var(--dark-green);
 }
 
-
 .map-container {
   display: flex;
   justify-content: center;
   margin: 3% auto;
   width: 90%;
 }
-
 
 /* -------
   REPAIRS
@@ -659,7 +707,7 @@ footer a:hover {
 }
 
 .overview-container h1 {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   color: var(--light-green);
   font-size: 2.5rem;
   text-decoration: underline;
@@ -671,9 +719,19 @@ footer a:hover {
   line-height: 1.6rem;
 }
 
-.repairs-container {
-  width: 70%;
-  margin: 3% auto;
+.repairs-main-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 'gridItem1' 'gridItem2';
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.repairs-card-container {
+  width: 100%;
+  margin: 3% 4%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -697,7 +755,7 @@ footer a:hover {
 .details-container h2 {
   font-size: 2.3rem;
   margin-bottom: 3%;
-  font-family: 'Rokkitt', serif; 
+  font-family: "Rokkitt", serif;
   border-bottom: 2px solid var(--light-grey);
 }
 
@@ -720,11 +778,10 @@ footer a:hover {
 }
 
 .left-container {
-  float: left;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  margin: 5% 0 2% 3%;
+  width: 100%;
+  margin-top: 15%;
 }
 
 .loan-container {
@@ -755,7 +812,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 15% 4%;
+  margin: 10% 4%;
 }
 
 .repair-link-container a {
@@ -772,7 +829,250 @@ footer a:hover {
   background-color: var(--dark-green);
 }
 
+/* ---------
+  FINANCING 
+---------- */
 
+.fin-container {
+  margin: 2% 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.fin-h1 {
+  font-family: "Rokkitt", serif;
+  color: var(--light-green);
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.donation-container {
+  text-align: center;
+  background-color: var(--mdark-grey);
+  margin-right: 10%;
+  border-radius: 20px;
+}
+
+.donation-container img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.donation-text {
+  padding: 5%;
+}
+
+.donation-text h2 {
+  font-family: "Rokkitt", serif;
+  font-size: 1.8rem;
+  color: var(--light-green);
+  margin-bottom: 2%;
+}
+
+.donation-text p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.donation-text a {
+  color: var(--light-green);
+}
+
+.donation-text a:hover {
+  color: var(--light-grey);
+  text-decoration: underline;
+}
+
+.fin-main-container {
+  text-align: center;
+}
+
+.fin-main-container h2 {
+  font-family: "Rokkitt", serif;
+  font-size: 2.8rem;
+}
+
+.fin-main-container p {
+  margin: 1% 0;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.fin-main-container span {
+  font-weight: 600;
+}
+
+.fin-links {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.fin-links a {
+  background-color: var(--light-green);
+  color: var(--mdark-grey);
+  border: 2px solid var(--light-green);
+  font-size: 1.1rem;
+  margin-top: 5%;
+  padding: 2% 4%;
+  border-radius: 50vh;
+}
+
+.fin-links a:hover {
+  background-color: var(--xdark-grey);
+  color: var(--light-green);
+  border: 2px solid var(--light-green);
+}
+
+/* ---------
+  PRODUCTS
+---------- */
+.prod-h1 {
+  font-family: "Rokkitt", serif;
+  color: var(--light-green);
+  font-size: 2.5rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 2% auto;
+}
+
+.prod-card {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5%;
+  text-align: center;
+  background-color: var(--mdark-grey);
+  border-radius: 30px;
+}
+
+.prod-card img {
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+
+.prod-card h2 {
+  margin-bottom: 3%;
+  font-family: 'Rokkitt', serif;
+  font-size: 2rem;
+  color: var(--light-green);
+}
+
+.prod-card p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 2%;
+}
+
+.prod-card a {
+  color: var(--light-green);
+}
+
+.prod-card a:hover {
+  color: var(--light-grey);
+  text-decoration: underline;
+}
+
+/* -------------
+  CUSTOM BUILDS
+-------------- */
+.custom-desc {
+  width: 75%;
+  text-align: center;
+  margin: 2% auto;
+}
+
+.custom-desc h1 {
+  font-family: "Rokkitt", serif;
+  color: var(--light-green);
+  font-size: 2.5rem;
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+
+.custom-desc p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.custom-grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 85%;
+  margin: 0 auto 3% auto;
+}
+
+.right-container {
+  width: 90%;
+  align-self: center;
+  margin-left: 4%;
+  text-align: center;
+  background-color: var(--mdark-grey);
+  border-radius: 20px;
+}
+
+.right-container img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.right-container h3 {
+  font-size: 1.3rem;
+  margin-top: 4%;
+}
+
+.right-container p {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  padding: 8%;
+  padding-top: 3%;
+}
+
+.right-container a:hover {
+  color: var(--light-grey);
+  text-decoration: underline;
+}
+
+.timeline-container {
+  margin-right: 5%;
+}
+
+.timeline-container h2 {
+  color: var(--light-green);
+  font-family: 'Rokkitt', serif;
+  font-size: 2.5rem;
+}
+
+.timeline-container p {
+  font-size: 1.2rem;
+  padding-left: 25px;
+  margin-left: 15px;
+  border-left: 5px solid var(--dark-grey);
+  line-height: 1.6rem;
+}
+
+.step-container {
+  margin: 1% auto;
+}
+
+.step-container a:hover {
+  color: var(--light-grey);
+  text-decoration: underline;
+}
 
 
 
@@ -903,7 +1203,6 @@ footer a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-
   .emp-one {
     grid-column: 1 / span 2;
   }
@@ -917,6 +1216,26 @@ footer a:hover {
     width: 85%;
   }
 
+  .repairs-main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-container {
+    grid-area: gridItem2;
+    margin-top: 10%;
+  }
+
+  .repairs-card-container {
+    grid-area: gridItem1;
+    margin: 0 auto;
+  }
+
+
+
+  /* financing styles */
+  .fin-links {
+    flex-direction: column;
+  }
 }
 
 /* tablets/lg mobile */
@@ -966,6 +1285,37 @@ footer a:hover {
   /* repair styles */
   .repairs-container {
     grid-template-columns: 1fr;
+  }
+
+
+
+  /* financing styles */
+  .fin-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 5%;
+  }
+
+  .donation-container {
+    margin-right: 0;
+    margin-bottom: 6%;
+  }
+
+  /* products styles */
+  .products-container {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  .prod-card {
+    margin: 4% auto;
+  }
+
+  .custom-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .right-container {
+    margin-top: 7%;
   }
 }
 
